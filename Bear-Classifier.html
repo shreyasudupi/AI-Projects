@@ -9,18 +9,29 @@ layout: page
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Classifier</title>
-    <p>This classifier distinguishes between a Grizzly bear, Black bear, and a teddy bear.</p>
-    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        iframe {
+            display: block;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+    </style>
 </head>
 <body>
-   
+    <p>This classifier distinguishes between a Grizzly bear, Black bear, and a teddy bear.</p>
 
     <iframe
-    src="https://sudupi-bear-classifier.hf.space/--replicas/29xr2/"
-    frameborder="0"
-    width="100%"
-    height="50%"
-></iframe>
+        src="https://sudupi-bear-classifier.hf.space/--replicas/29xr2/"
+        frameborder="0"
+        allowfullscreen
+    ></iframe>
 </body>
 </html>
 
