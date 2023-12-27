@@ -1,12 +1,15 @@
 ---
-title: 1. Single file
+title: Bear Classifier
 layout: page
 ---
 
 <input id="photo" type="file">
+<button id="submitBtn">Submit</button>
 <div id="results"></div>
+
 <script>
   const photo = document.getElementById('photo');
+  const submitBtn = document.getElementById('submitBtn');
   const results = document.getElementById('results');
 
   async function loaded(reader) {
@@ -25,5 +28,14 @@ layout: page
     reader.readAsDataURL(photo.files[0]);
   }
 
+  function submit() {
+    if (photo.files.length > 0) {
+      read();
+    } else {
+      results.innerHTML = "Please select a file before submitting.";
+    }
+  }
+
   photo.addEventListener('change', read);
+  submitBtn.addEventListener('click', submit);
 </script>
