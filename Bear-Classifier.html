@@ -16,34 +16,12 @@ layout: page
     <button onclick="uploadImage()">Submit</button>
     <div id="output"></div>
 
-    <script>
-        function uploadImage() {
-            const input = document.getElementById('imageInput');
-            const outputDiv = document.getElementById('output');
-
-            if (input.files.length > 0) {
-                const file = input.files[0];
-                const formData = new FormData();
-                formData.append('image', file);
-
-                fetch('https://sudupi-bear-classifier.hf.space/--replicas/29xr2/', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
-                    // Display the output on the webpage
-                    outputDiv.innerHTML = `<p>Classification Result: ${data.result}</p>`;
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    outputDiv.innerHTML = '<p>Error occurred during classification.</p>';
-                });
-            } else {
-                outputDiv.innerHTML = '<p>Please select an image before submitting.</p>';
-            }
-        }
-    </script>
+    <iframe
+    src="https://sudupi-bear-classifier.hf.space/--replicas/29xr2/"
+    frameborder="0"
+    width="850"
+    height="450"
+></iframe>
 </body>
 </html>
 
