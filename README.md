@@ -1,1 +1,1 @@
-A simple JS to Display my AI Projects
+A simple webpage to display my AI Projects
