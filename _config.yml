@@ -1,0 +1,6 @@
+remote_theme: daviddarnes/alembic@main
+plugins:
+- jekyll-remote-theme
+
+title: Shreyas Udupi
+description: Some basic examples of AI Exmaples
