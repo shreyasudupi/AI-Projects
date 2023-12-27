@@ -1,1 +1,1 @@
-A soomple JS to Display my AI Projects
+A simple JS to Display my AI Projects
