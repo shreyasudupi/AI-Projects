@@ -13,7 +13,7 @@ layout: page
   const results = document.getElementById('results');
 
   async function loaded(reader) {
-    const response = await fetch('https://hf.space/embed/jph00/pets/+/api/predict/', {
+    const response = await fetch('https://sudupi-bear-classifier.hf.space/--replicas/29xr2/', {
       method: "POST", body: JSON.stringify({ "data": [reader.result] }),
       headers: { "Content-Type": "application/json" }
     });
