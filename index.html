@@ -3,4 +3,17 @@ title: Home
 layout: page
 ---
 
-Welcome to My Project Space
+<p>Welcome to my project space. This is a collection of small AI projects I have built,
+each with a live demo you can try in the browser.</p>
+
+<h2>Projects</h2>
+
+<ul class="project-list">
+{% for project in site.data.projects %}
+  <li class="project">
+    <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+    <p>{{ project.description }}</p>
+    {% if project.tags %}<p><small>{{ project.tags | join: " · " }}</small></p>{% endif %}
+  </li>
+{% endfor %}
+</ul>
