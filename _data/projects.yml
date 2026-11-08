@@ -1,0 +1,8 @@
+# One entry per project. The home page builds its list from this file,
+# so adding a project here is all it takes to show it on the index.
+- title: Bear Classifier
+  url: /Bear-Classifier.html
+  description: >-
+    An image classifier that tells whether a bear is a grizzly, a black bear,
+    or a teddy bear. Upload a photo and try the live demo hosted on Hugging Face Spaces.
+  tags: [computer vision, image classification, fastai]
